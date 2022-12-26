@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  padding: 25px;
+  background: #f4f1f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .navigation-list {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+
+    :last-child {
+       margin-right: 0;
+    }
+   
+    .navigation-list-item {
+      font-weight: 400;
+      margin-right: 52px;
+      font-family: 'Nunito Sans';
+      font-style: normal;      
+      font-size: 24px;
+      line-height: 33px;
+      cursor: pointer;
+    }
+  }
+}
+
+.active-link {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}

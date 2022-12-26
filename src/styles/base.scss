@@ -1,0 +1,156 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+a {
+   text-decoration: none;
+   color: rgb(77, 90, 120)
+}
+
+.app-wrapper {
+   margin: 0 auto;
+   max-width: 1200px;
+   justify-content: center;
+}
+
+h1{
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.wrapper {
+   text-align: center;
+   font-family: "Roboto", arial, sans-serif;
+	color: #fefefe;
+	border-style: solid;
+	background-color:  rgb(77, 90, 120); 
+   width: 100%;
+   padding: 20px 0;
+}
+
+form {
+   padding: 20px 10px;
+   width: 400px;
+   margin: 0 auto;
+	text-align: center;
+}
+
+.input-item {
+   height: 45px;
+   margin-bottom: 20px;
+   font-size: 20px;
+   padding: 0 10px;
+   border: 1px solid #3E424B;
+   outline: none;
+}
+
+.button {
+   width: 100%;
+   font-weight: 700;
+	font-size: 30px;
+	color:  #3E424B;
+	background: #fefefe;
+	border-style: none;
+   border-radius:  10px ;
+	padding: 10px 50px;
+	margin: 25px 0 15px 0;
+	position: relative;
+	display: inline-block;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+   text-transform: uppercase;
+}
+
+button {
+   font-weight: 700;
+	font-size: 20px;
+	color: #111;
+	background: #fefefe;
+	border-style: none;
+   border-radius:  10px ;
+	padding: 10px 10px;
+	margin: 15px 0 15px 0;
+	position: relative;
+	display: inline-block;
+	transition: all .1s linear;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+   text-transform: uppercase;
+   margin-right: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+button:hover {
+   color: #fefefe;
+   background-color: rgb(120, 114, 114);
+}
+
+.main-block {
+   min-height: 300px;
+}
+
+footer {
+   width: 100%;
+   padding: 25px;
+   background: #f4f1f2;
+   color: rgb(77, 90, 120)
+}
+
+.footer-item-list {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+.post {
+   margin-bottom: 30px;
+   a {
+      color: white;
+      font-size: 20px;
+      text-decoration: underline;
+      margin-bottom: 20px;
+   }
+}
+
+hr {
+   margin-top: 10px;
+}
+
+.post-button-block {
+   display: flex;
+   gap: 10px;
+   padding: 0 10px;
+   justify-content: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.post-button, .back-to-post-button {
+   text-transform: none;
+   font-size: 20px;
+   margin: 0;
+   padding: 5px;
+   min-width: 50px;
+   border-radius: unset;
+}
+
+.back-to-post-button {
+   align-self: center;
+}
+
+.single-post-block {
+   h2, p {
+      margin-bottom: 10px;
+   }
+}
+
+.single-post-block-btn {
+   padding: 0 20px;
+   display: flex;
+   justify-content: center;
+}
