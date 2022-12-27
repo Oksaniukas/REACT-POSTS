@@ -1,7 +1,6 @@
 import React from "react";
 
-
-function NewPost() {
+function NewPost({create}) {
 
    return (
       <div>

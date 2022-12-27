@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage(props) {
+   let navigate = useNavigate()
 
    let [loginFormData, setLoginFormData] = useState(
       {
@@ -39,7 +41,7 @@ function LoginPage(props) {
       if (loginFormData.userName !== correctDataLogin.userName || loginFormData.password !== correctDataLogin.password) {
          alert("Password/Username error");
       } else {
-         props.changeState()
+         navigate('/')
       }
    }
      

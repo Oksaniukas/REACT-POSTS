@@ -10,7 +10,7 @@ function MainLayout() {
             <div className='navigation-list'>
                <NavLink to="/" className={isActive} > Main </NavLink>
                <NavLink to="/posts" className={isActive}> Posts </NavLink>
-               <NavLink to="/new" className={isActive}> Create Post </NavLink>
+               <NavLink to="/new" className={isActive}> Create new Post </NavLink>
                <NavLink to="/contacts" className={isActive}> Contacts </NavLink>
             </div>
          </header>

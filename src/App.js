@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React from "react";
 import { Routes, Route} from 'react-router-dom';
 import { LoginLayout } from "./components/LoginLayout";
 import { LoginPage } from "./pages/LoginPage";
@@ -12,24 +12,18 @@ import { EditPost } from "./pages/EditPost";
 import { SinglePostPage } from "./pages/SinglePostPage";
 
 function App() {
-  let [showLoginPage, setShowLoginPage] = useState(true)
 
-  function changeShowLoginPageState() {
-    setShowLoginPage(prevLoginPage => !prevLoginPage); 
-    
-  }
   return (
     <div className="app-wrapper">
       <Routes>
-        <Route path='/login' element={showLoginPage && <LoginLayout />}>
-          <Route index element={ <LoginPage changeState={changeShowLoginPageState} />} />
+        <Route path='/login' element={<LoginLayout />}>
+          <Route index element={ <LoginPage />} />
         </Route>
         <Route>
 
         </Route>
         <Route path="/" element={ <MainLayout />}>
           <Route index element={ <MainPage />} />
-          {/* <Route index element={! showLoginPage && <MainPage />} /> */}
           <Route path="/posts" element={<Posts />} />
           <Route path="/posts/:id" element={<SinglePostPage />} />
           <Route path="/new" element={<NewPost />} />
